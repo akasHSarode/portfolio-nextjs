@@ -10,42 +10,6 @@ body {
   font-family: 'Nunito'
 }
 
-nav {
-  @apply p-8;
-  @apply flex;
-  @apply bg-gray-900;
-  @apply justify-center;
-  @apply fixed;
-  @apply w-full;
-  @apply top-0;
-}
-
-.nav-link {
-  @apply float-left;
-}
-
-.nav-link:nth-child(n+2) {
-  @apply ml-2;
-}
-
-.nav-btn {
-  @apply font-semibold;
-  @apply px-5;
-  @apply py-2;
-  @apply rounded;
-  @apply transition;
-  @apply duration-300;
-  @apply ease-out;
-}
-
-.nav-btn:hover {
-  @apply bg-green-500;
-}
-
-.nav-btn.active {
-  @apply bg-green-500;
-}
-
 body section {
   @apply p-4;
   scroll-margin-top: 5.5rem;
@@ -57,42 +21,4 @@ body section {
   @apply flex-col;
   @apply justify-around;
   @apply items-center;
-}
-
-.skills {
-  @apply mt-12; 
-  @apply grid;
-  @apply grid-cols-1;
-  @apply gap-10;
-}
-
-.skill-wrapper {
-  @apply flex;
-  @apply items-center;
-}
-
-.skill-wrapper > .skill-list-tile {
-  @apply border-l-4;
-  @apply border-green-500;
-  @apply pl-2;
-}
-
-.skill-list-tile > .skill-leading {
-  @apply text-sm;
-  @apply text-gray-500;
-  @apply block;
-  @apply leading-4;
-}
-
-
-@screen md {
-  nav {
-    @apply justify-end;
-  }
-}
-
-@screen lg {
-  .skills {
-    @apply grid-cols-2;
-  }
 }

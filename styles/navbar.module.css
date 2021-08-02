@@ -1,0 +1,40 @@
+.nav {
+  @apply p-8;
+  @apply flex;
+  @apply justify-center;
+  @apply fixed;
+  @apply w-full;
+  @apply top-0;
+}
+
+.nav-link {
+  @apply float-left;
+}
+
+.nav-link:nth-child(n+2) {
+  @apply ml-2;
+}
+
+.nav-btn {
+  @apply font-semibold;
+  @apply px-5;
+  @apply py-2;
+  @apply rounded;
+  @apply transition;
+  @apply duration-300;
+  @apply ease-out;
+}
+
+.nav-btn:hover {
+  @apply bg-green-500;
+}
+
+.active {
+  @apply bg-green-500;
+}
+
+@screen md {
+  .nav {
+    @apply justify-end;
+  }
+}

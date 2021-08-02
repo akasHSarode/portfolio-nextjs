@@ -1,0 +1,30 @@
+.skills {
+  @apply mt-12; 
+  @apply grid;
+  @apply grid-cols-1;
+  @apply gap-10;
+}
+
+.skill-wrapper {
+  @apply flex;
+  @apply items-center;
+}
+
+.skill-list-tile {
+  @apply border-l-4;
+  @apply border-green-500;
+  @apply pl-2;
+}
+
+.skill-leading {
+  @apply text-sm;
+  @apply text-gray-500;
+  @apply block;
+  @apply leading-4;
+}
+
+@screen lg {
+  .skills {
+    @apply grid-cols-2;
+  }
+}
